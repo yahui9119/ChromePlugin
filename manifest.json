@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "GhostSubmit",
+  "version": "0.0.1",
+
+  "description": 
+    "幽灵提交工具 ————>自定义内容和格式提交数据的工具",
+  "icons": { 
+    "16" : "ico/16.png",
+    "48" : "ico/48.png",
+    "128" : "ico/128.png"
+  },
+  "browser_action": {
+                    "default_icon": "ico/128.png",
+                    "default_popup":"popup.html"
+                    },
+  "options_page":"options.html",
+  "permissions": [
+    "https://secure.flickr.com/",
+    "http://api.flickr.com/" 
+ 
+  ]
+
+}
