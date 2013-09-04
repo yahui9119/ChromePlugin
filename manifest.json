@@ -19,7 +19,7 @@
   "permissions": [
     "https://secure.flickr.com/",
     "http://api.flickr.com/" 
- 
+
   ]
 
 }
