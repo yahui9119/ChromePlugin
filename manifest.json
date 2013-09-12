@@ -16,10 +16,13 @@
                     "default_popup":"popup.html"
                     },
   "options_page":"options.html",
+  "background":{
+     "scripts":["bg.js"]
+  }
+  ,
   "permissions": [
-    "https://secure.flickr.com/",
-    "http://api.flickr.com/" 
-
+    "webNavigation",
+    "tabs", "http://*/*"
   ]
 
 }
