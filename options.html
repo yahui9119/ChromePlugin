@@ -1,13 +1,14 @@
-<html>
+<html ng-app>
 	<head>
-	<title>options</title>
+	<title>设置</title>
 	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script type="text/javascript" src='js/jquery.js'></script>
 	<script type="text/javascript" src='Bootstrap/js/bootstrap.min.js'></script>
-	
+	<script type="text/javascript" src='Angular/angular.js'></script>
 	<script type="text/javascript" src='js/options.js'></script>
 	</head>
 	<body>
+		<!--
 		<h1>配置</h1>
 		<form>
 			<div class="input-group">
@@ -28,5 +29,14 @@
 			</div>
 
 		</form>
+		-->
+		<p> Nothing here {{'yet'+'!'}}</p>
+		<ul ng-controller="PhoneList">
+		<li ng-repeat="phone in phones"></li>
+			{{phone.name}}
+			<p>
+				{{phone.snippet}}
+			</p>
+		</ul>
 	</body>
 </html>
