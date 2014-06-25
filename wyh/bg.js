@@ -12,8 +12,8 @@ var urlfilter = {
 }
 var setting = {
     query: {
-        '#UserName': '',
-        '#Password': '',
+        '#UserName': 'ljli',
+        '#Password': 'Ferry!123',
         submit: function () {
             return "#ctl00";
         }

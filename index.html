@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>U7Tools</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        @-webkit-keyframes glowing {
+            from { -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2); }
+            50% { -webkit-box-shadow: 0px 0px 16px rgba(44, 154, 219, 0.8), 0px 1px 2px rgba(0, 0, 0, 0.2); }
+            to { -webkit-box-shadow: 0px 0px 0px rgba(44, 154, 219, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.2); }
+        }
+
+        .glow { -webkit-animation-duration: 3s; -webkit-animation-iteration-count: infinite; -webkit-animation-name: glowing; }
+
+        body { width: 350px; height: 0px; }
+
+        .tab-content { margin-top: 5px; }
+        .tabs-below > .nav-tabs, .tabs-right > .nav-tabs, .tabs-left > .nav-tabs { border-bottom: 0; }
+        .tabbable:before, .tabbable:after { display: table; line-height: 0; content: ""; }
+        .tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li { float: none; }
+        .tabs-left > .nav-tabs { float: left; margin-right: 19px; border-right: 1px solid #ddd; }
+            .tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a { min-width: 74px; margin-right: 0; margin-bottom: 3px; }
+            .tabs-left > .nav-tabs > li > a { margin-right: -1px; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
+            .tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus { border-color: #ddd transparent #ddd #ddd; }
+    </style>
+</head>
+<body>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#accoutManage" data-toggle="tab">账号管理</a></li>
+        <li><a href="#setting" data-toggle="tab">设置</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="accoutManage">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div class="tabbable tabs-left">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#query" data-toggle="tab">Query</a></li>
+                            <li class=""><a href="#cdn" data-toggle="tab">CDN</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="query">
+                                <div class="input-group">
+                                    <span class="input-group-addon">UserName:</span>
+                                    <input type="text" class="form-control" value="" placeholder="用户名">
+                                </div>
+                                <br />
+                                <div class="input-group">
+                                    <span class="input-group-addon">PassWord:</span>
+                                    <input type="password" class="form-control" value="" placeholder="密码">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cdn">
+                                <div class="input-group">
+                                    <span class="input-group-addon">UserName:</span>
+                                    <input type="text" class="form-control" placeholder="用户名">
+                                </div>
+                                <br />
+                                <div class="input-group">
+                                    <span class="input-group-addon">PassWord:</span>
+                                    <input type="password" value="" class="form-control" placeholder="密码">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="setting">
+            <div class="panel panel-danger">
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/action.js" type="text/javascript"></script>
+</body>
+</html>
